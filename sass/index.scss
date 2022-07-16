@@ -1,0 +1,77 @@
+$primary: #e6dbdb;
+$secondary: #807778;
+$border: #bdb8b8;
+
+@mixin disFlex ($ds,$fd, $jc, $ai) {
+    display: $ds;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+* {
+    color: $primary;
+}
+
+body {
+    background-color: $primary;
+    
+    .container {
+        @include disFlex(flex, column, center, center);
+        
+        .calculadora {
+            display: grid;
+            grid-template-columns: repeat(4, 75px);
+            grid-template-rows: 125px repeat(5, 75px);
+            
+            margin: 5vh;
+            padding: 15px;
+            
+            border: 2px solid $border;
+            border-radius: 35px;
+            background-color: $primary;
+            box-shadow: 15px 5px 5px 0px #00000033;
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+    margin: 10px;
+    padding: 0;
+
+    border: none;
+    border-radius: 32px;
+    background-color: $secondary;
+    box-shadow: 5px 5px 5px 0px #00000040, 5px 2px 5px 5px #00000040;   
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.display {
+    @include disFlex(flex, column, space-between, flex-end);
+    
+    grid-column: 1 / -1;
+    text-align: right;
+    word-break: break-all;
+
+    padding: 25px;
+    margin: 10px 10px 20px;
+    
+    border-radius: 32px;
+    background-color: #312d2d;
+    box-shadow: 0px 0px 0px 10px #00000050;
+    
+    #valor-actual {
+        font-size: 1.5em;
+    }
+    
+    #valor-anterior {
+        font-size: 2em;
+    }
+}
