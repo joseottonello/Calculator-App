@@ -8,7 +8,7 @@ This project has two branches:
 "gh-pages" branch: where your "deploy" is located
 
 ## Demo
-If you want to see the demo of this project deployed you can visit [Project demo](https://joseottonello.github.io/app-calculadora//)
+If you want to see the demo of this project deployed you can visit [Project demo](https://calculator-app-joseottonello.vercel.app/)
 
 ## How to clone
 To clone this repository you need:
