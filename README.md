@@ -20,7 +20,7 @@ git clone + link
 ```
 
 ## Preview
-![](./assets/gif.gif)
+![](./assets/imagen.png)
 
 ### Notes
 If you want to learn all about Sass I recommend you visit the site [Sass-long.com](https://sass-lang.com//)
